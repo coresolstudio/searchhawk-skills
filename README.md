@@ -169,6 +169,17 @@ Regression tests for routing and quality: [evals/searchhawk-scenarios.md](evals/
 ./install.sh --all    # Cursor + Claude Code
 ```
 
+### Claude.ai (web) upload
+
+Claude.ai's **Upload skill** dialog requires one zip per skill with `SKILL.md` in a single top-level folder. Generate upload-ready zips with:
+
+```bash
+./package.sh                    # all 25 skills → dist/
+./package.sh site-search-audit  # one skill
+```
+
+Connector scripts referenced by a skill (e.g. `onpage.py`) are bundled into its zip automatically, so each upload is self-contained. Then upload any `dist/*.zip` via **Claude → Settings → Capabilities → Skills → Upload skill**.
+
 ---
 
 ## Disclaimer

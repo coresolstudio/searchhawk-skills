@@ -34,3 +34,6 @@ node_modules/
 # npx skills install artifacts (local-only)
 .agents/
 skills-lock.json
+
+# Packaged skill zips (./package.sh output)
+dist/
