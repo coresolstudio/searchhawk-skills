@@ -5,7 +5,7 @@ description: >
 version: "2.0.0"
 license: MIT
 compatibility: "Cursor, Claude Code, Agent Skills hosts"
-homepage: "https://github.com/searchhawk/skills"
+homepage: "https://seometahawk.com/searchmetahawk-skills"
 when_to_use: "Track rankings, keyword positions, SERP rank."
 argument-hint: "<domain> [keyword list]"
 metadata:

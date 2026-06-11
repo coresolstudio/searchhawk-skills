@@ -6,7 +6,7 @@ import time
 import urllib.error
 import urllib.request
 
-USER_AGENT = "SearchHawk-Connector/2.3 (+https://github.com/creativehassan/searchhawk-skills)"
+USER_AGENT = "SearchHawk-Connector/2.3 (+https://seometahawk.com/searchmetahawk-skills)"
 TIMEOUT = 20
 MAX_BYTES = 2_000_000
 

@@ -5,7 +5,7 @@ description: >
 version: "2.0.0"
 license: MIT
 compatibility: "Cursor, Claude Code, Agent Skills hosts"
-homepage: "https://github.com/searchhawk/skills"
+homepage: "https://seometahawk.com/searchmetahawk-skills"
 when_to_use: "Content gap analysis, what am I missing, competitor content gaps."
 argument-hint: "<your-domain> [--competitors <domains>]"
 allowed-tools: WebFetch

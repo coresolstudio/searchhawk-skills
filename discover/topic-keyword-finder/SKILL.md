@@ -5,7 +5,7 @@ description: >
 version: "2.0.0"
 license: MIT
 compatibility: "Cursor, Claude Code, Agent Skills hosts"
-homepage: "https://github.com/searchhawk/skills"
+homepage: "https://seometahawk.com/searchmetahawk-skills"
 when_to_use: "Keyword research, topic clusters, what should I write about, long-tail keywords."
 argument-hint: "<topic> [market/language]"
 metadata:

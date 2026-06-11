@@ -22,7 +22,7 @@ install_skill() {
   fi
 }
 
-echo "SearchHawk Skills v2.0 — SEO · AEO · GEO for AI assistants"
+echo "SearchHawk Skills v2.3 — SEO · AEO · GEO for AI assistants"
 echo ""
 
 for layer in cross-cutting discover diagnose decide improve track protocol; do

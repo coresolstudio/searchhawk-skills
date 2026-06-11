@@ -3,6 +3,8 @@
   "metadata": {
     "title": "SearchHawk Skills",
     "tagline": "SEO · AEO · GEO for AI assistants",
+    "homepage": "https://seometahawk.com/searchmetahawk-skills",
+    "repository": "https://github.com/coresolstudio/searchhawk-skills",
     "version": "2.3.0",
     "skill_count": 25,
     "command_namespace": "searchhawk"
