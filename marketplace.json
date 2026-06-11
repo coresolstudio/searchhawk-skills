@@ -1,0 +1,38 @@
+{
+  "name": "searchhawk-skills",
+  "metadata": {
+    "title": "SearchHawk Skills",
+    "tagline": "SEO · AEO · GEO for AI assistants",
+    "version": "2.3.0",
+    "skill_count": 25,
+    "command_namespace": "searchhawk"
+  },
+  "commands": "./commands/",
+  "skills": [
+    "./cross-cutting/searchhawk-auto",
+    "./cross-cutting/publish-checklist",
+    "./discover/topic-keyword-finder",
+    "./discover/serp-reviewer",
+    "./discover/competitor-snapshot",
+    "./discover/content-gap-finder",
+    "./diagnose/site-search-audit",
+    "./diagnose/page-audit",
+    "./diagnose/technical-site-check",
+    "./decide/fix-priority-ranker",
+    "./improve/search-content-writer",
+    "./improve/answer-content-optimizer",
+    "./improve/ai-friendly-content-optimizer",
+    "./improve/meta-tags-helper",
+    "./improve/schema-helper",
+    "./improve/internal-links-helper",
+    "./improve/content-updater",
+    "./track/rank-monitor",
+    "./track/ai-citation-checker",
+    "./track/performance-snapshot",
+    "./track/change-alerts",
+    "./protocol/content-quality-gate",
+    "./protocol/domain-trust-check",
+    "./protocol/entity-profile",
+    "./protocol/project-memory"
+  ]
+}

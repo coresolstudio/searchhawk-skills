@@ -1,0 +1,18 @@
+---
+description: SearchHawk Skills — SEO, AEO, and GEO for any website owner
+alwaysApply: false
+---
+
+# SearchHawk Skills
+
+**SEO · AEO · GEO for AI assistants**
+
+Use `searchhawk-auto` to route broad requests. Common entry points:
+
+- Audit site → `site-search-audit`
+- One page → `page-audit`
+- Keywords → `topic-keyword-finder`
+- What to fix first → `fix-priority-ranker`
+- Before publish → `publish-checklist`
+
+Label data as Measured, User-provided, or Estimated. Never guarantee rankings or AI citations.
