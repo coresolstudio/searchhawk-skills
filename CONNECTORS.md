@@ -10,6 +10,14 @@ Every skill runs at **Tier 1** with zero dependencies — paste data, WebFetch, 
 | **2** | GSC, GA4, PSI API keys | Your authenticated data |
 | **3** | MCP (Ahrefs, Semrush, etc.) | Full automation |
 
+## MCP (Tier 3)
+
+[.mcp.json](.mcp.json) ships an optional reference `fetch` server (`uvx mcp-server-fetch`)
+so MCP hosts — Claude Code/Desktop, Abacus AI, LibreChat, and others — can pull live page
+data when the Python connectors can't run. Add your own SEO MCP servers (Ahrefs, Semrush,
+GSC) to the same file for full Tier 3 automation; skills reference them via the
+`~~category` placeholders below. Per-host setup: [docs/HOSTS.md](docs/HOSTS.md).
+
 ## Bundled scripts (stdlib Python)
 
 Run from repository root. See [scripts/connectors/README.md](scripts/connectors/README.md).

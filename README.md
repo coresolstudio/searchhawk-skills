@@ -4,7 +4,7 @@
 
 [![Website](https://img.shields.io/badge/website-seometahawk.com-blue)](https://seometahawk.com/searchmetahawk-skills)
 [![GitHub Stars](https://img.shields.io/github/stars/coresolstudio/searchhawk-skills?style=flat)](https://github.com/coresolstudio/searchhawk-skills)
-[![Version](https://img.shields.io/badge/version-2.3.0-orange)](https://seometahawk.com/searchmetahawk-skills)
+[![Version](https://img.shields.io/badge/version-2.4.0-orange)](VERSIONS.md)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Last Commit](https://img.shields.io/github/last-commit/coresolstudio/searchhawk-skills)](https://github.com/coresolstudio/searchhawk-skills/commits/main)
 [![Skills](https://img.shields.io/badge/skills-25-purple)]()
@@ -33,6 +33,14 @@ Quality gates use **Hawk-Trust (60 items)** for content and **Hawk-Authority (35
 
 ## Quick start
 
+| Tool | Install |
+|------|---------|
+| **Cursor** | `git clone` + `./install.sh` — or Settings → Rules → Remote Rule (GitHub) |
+| **Claude Code** | `git clone` + `./install.sh --all` |
+| **Claude.ai (web)** | Download a zip from [`dist/`](dist/) → Settings → Capabilities → Skills → Upload skill |
+| **Codex / Copilot / Windsurf / Gemini CLI** | Clone the repo — agents read [AGENTS.md](AGENTS.md) automatically |
+| **Abacus AI & other MCP hosts** | Load skills as instructions + optional [.mcp.json](.mcp.json) fetch server — see [docs/HOSTS.md](docs/HOSTS.md) |
+
 ```bash
 git clone https://github.com/coresolstudio/searchhawk-skills.git
 cd searchhawk-skills
@@ -49,6 +57,8 @@ Run Hawk-Trust quality gate on [URL]
 ```
 
 **Single-skill install:** symlink any folder under `discover/`, `diagnose/`, etc. into your host's skills directory.
+
+**Full per-host guide** (Cursor, Claude, Codex, Windsurf, Copilot, Gemini CLI, Abacus AI, generic MCP hosts): [docs/HOSTS.md](docs/HOSTS.md)
 
 ---
 
@@ -159,6 +169,22 @@ Benchmarks: [hawk-trust-benchmark.md](references/hawk-trust-benchmark.md) · [ha
 ## Eval scenarios
 
 Regression tests for routing and quality: [evals/searchhawk-scenarios.md](evals/searchhawk-scenarios.md) (**35 scenarios**)
+
+---
+
+## Project docs
+
+| Doc | Purpose |
+|-----|---------|
+| [AGENTS.md](AGENTS.md) | Repo guidance for any agents.md-aware AI tool |
+| [CLAUDE.md](CLAUDE.md) | Claude Code-specific notes |
+| [docs/HOSTS.md](docs/HOSTS.md) | Per-host setup: Cursor, Claude, Codex, Windsurf, Copilot, Gemini CLI, Abacus AI, MCP hosts |
+| [CONNECTORS.md](CONNECTORS.md) | Tier model, bundled scripts, MCP config |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | How to add or change a skill |
+| [VERSIONS.md](VERSIONS.md) | Release history |
+| [SECURITY.md](SECURITY.md) | Threat surface + vulnerability reporting |
+| [PRIVACY.md](PRIVACY.md) | Zero-telemetry policy, connector network behavior |
+| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Community standards |
 
 ---
 
