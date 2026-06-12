@@ -12,11 +12,23 @@ Every skill runs at **Tier 1** with zero dependencies — paste data, WebFetch, 
 
 ## MCP (Tier 3)
 
-[.mcp.json](.mcp.json) ships an optional reference `fetch` server (`uvx mcp-server-fetch`)
-so MCP hosts — Claude Code/Desktop, Abacus AI, LibreChat, and others — can pull live page
-data when the Python connectors can't run. Add your own SEO MCP servers (Ahrefs, Semrush,
-GSC) to the same file for full Tier 3 automation; skills reference them via the
-`~~category` placeholders below. Per-host setup: [docs/HOSTS.md](docs/HOSTS.md).
+[.mcp.json](.mcp.json) ships a reference `fetch` server (`uvx mcp-server-fetch`) plus
+official **remote HTTP MCP endpoints** for the major SEO platforms — auth happens
+interactively (OAuth or API key) on first use, nothing runs locally:
+
+| Vendor | Endpoint | Auth | Typical tools |
+|--------|----------|------|---------------|
+| Ahrefs | `https://api.ahrefs.com/mcp/mcp` | API key (Lite+ plan) | keywords, backlinks, site audit |
+| Semrush | `https://mcp.semrush.com/v1/mcp` | OAuth / API key | organic & keyword research, backlinks |
+| SE Ranking | `https://api.seranking.com/mcp` | OAuth / API key | keywords, AI-search visibility |
+| SISTRIX | `https://api.sistrix.com/mcp` | OAuth / Bearer | domain, keyword, links, AI modules |
+| SimilarWeb | `https://mcp.similarweb.com` | OAuth / key | traffic estimates, competitive intel |
+
+MCP is never required — every skill runs at Tier 1 with pasted data. For free
+first-party data via local MCP, add Google's official
+[Analytics MCP](https://github.com/googleanalytics/google-analytics-mcp) (`pipx run analytics-mcp`)
+or the community [GSC MCP](https://github.com/AminForou/mcp-gsc) with your own Google
+credentials. Per-host setup: [docs/HOSTS.md](docs/HOSTS.md).
 
 ## Bundled scripts (stdlib Python)
 
@@ -32,6 +44,7 @@ Run from repository root. See [scripts/connectors/README.md](scripts/connectors/
 | **schema_lint.py** | `python3 scripts/connectors/schema_lint.py <url>` | JSON-LD extract + validate |
 | **sitemap.py** | `python3 scripts/connectors/sitemap.py <url>` | Sitemap index, llms.txt URL discovery |
 | **psi.py** | `python3 scripts/connectors/psi.py <url>` | PageSpeed Insights + Core Web Vitals |
+| **report_html.py** | `python3 scripts/connectors/report_html.py report.json` | Styled self-contained HTML report (cards, charts, recommendations) |
 
 ## Placeholder categories
 
@@ -54,7 +67,7 @@ Skills use `~~category` placeholders — swap for your tool or free alternative:
 | page-audit | onpage.py, psi.py |
 | internal-links-helper | crawl.py → linkgraph.py |
 | schema-helper | schema_lint.py |
-| performance-snapshot, change-alerts | psi.py (optional) |
+| performance-snapshot, change-alerts | psi.py (optional), report_html.py |
 
 ## Environment variables (optional)
 

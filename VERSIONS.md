@@ -2,6 +2,20 @@
 
 Release state for SearchHawk Skills. The latest entry is what ships on `main`.
 
+## 2.5.0 — Remote SEO MCP endpoints & HTML reporting (2026-06-12)
+
+- `.mcp.json` — official remote HTTP MCP endpoints for Ahrefs, Semrush, SE Ranking,
+  SISTRIX, and SimilarWeb (OAuth/key on first use, nothing runs locally) alongside
+  the existing `fetch` server
+- `report_html.py` connector — stdlib-only generator that renders a JSON payload
+  into a self-contained styled HTML report (metric cards with auto-computed deltas,
+  SVG bar charts, source tags, priority-coded recommendations, light/dark themes)
+- `performance-snapshot` 2.1.0 — full skill contract, decision gates,
+  Measured/User-provided/Estimated source-tagging discipline, `--html` report
+  option, audience templates (executive / technical / client)
+- `CONNECTORS.md` — documented remote MCP endpoint table + free local Google
+  MCP options (Analytics MCP, GSC MCP)
+
 ## 2.4.0 — Multi-host & MCP compatibility (2026-06-12)
 
 - `AGENTS.md` + `CLAUDE.md` so any agents.md-reading host (Cursor, Codex, Copilot,

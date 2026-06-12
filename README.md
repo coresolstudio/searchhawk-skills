@@ -4,7 +4,7 @@
 
 [![Website](https://img.shields.io/badge/website-seometahawk.com-blue)](https://seometahawk.com/searchmetahawk-skills)
 [![GitHub Stars](https://img.shields.io/github/stars/coresolstudio/searchhawk-skills?style=flat)](https://github.com/coresolstudio/searchhawk-skills)
-[![Version](https://img.shields.io/badge/version-2.4.0-orange)](VERSIONS.md)
+[![Version](https://img.shields.io/badge/version-2.5.0-orange)](VERSIONS.md)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Last Commit](https://img.shields.io/github/last-commit/coresolstudio/searchhawk-skills)](https://github.com/coresolstudio/searchhawk-skills/commits/main)
 [![Skills](https://img.shields.io/badge/skills-25-purple)]()
@@ -144,6 +144,7 @@ Bundled stdlib Python scripts. See [CONNECTORS.md](CONNECTORS.md).
 | `schema_lint.py` | JSON-LD validation |
 | `sitemap.py` | Sitemap / llms.txt discovery |
 | `psi.py` | PageSpeed Insights + Core Web Vitals |
+| `report_html.py` | Styled self-contained HTML stakeholder report |
 
 ```bash
 python3 scripts/connectors/onpage.py https://example.com

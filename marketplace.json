@@ -5,7 +5,7 @@
     "tagline": "SEO · AEO · GEO for AI assistants",
     "homepage": "https://seometahawk.com/searchmetahawk-skills",
     "repository": "https://github.com/coresolstudio/searchhawk-skills",
-    "version": "2.4.0",
+    "version": "2.5.0",
     "skill_count": 25,
     "command_namespace": "searchhawk"
   },
